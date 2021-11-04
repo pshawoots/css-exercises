@@ -1,0 +1,24 @@
+External, Internal, Inline CSS difference? 
+
+External CSS is when you have an external CSS file where you do all your styling.
+Internal CSS is adding rules to the .html file in the head element.
+Inline CSS is adding rules to the element call itself.
+
+Class Selectors: .class1, .class2, ...; ID Selectors: #html-element-ID
+
+Single Rule for 2 different selectors
+div,
+p {
+    color: white;
+}
+
+single rule for element with id="title" and class="primary"
+#title.primary {
+    color: white;
+}
+
+descendent combinators apply rule only to selector if it has with ancestor that 
+matches the previous selector.
+
+class selector (.) has higher specificity than rule with three type (element name)
+selectors.
